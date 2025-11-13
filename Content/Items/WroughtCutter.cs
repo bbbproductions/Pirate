@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Pirate.Items
+namespace Pirate.Content.Items
 {
     public class WroughtCutter : ModItem
     {
