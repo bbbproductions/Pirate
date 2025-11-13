@@ -10,7 +10,7 @@ namespace Pirate.Content.Accessories
         {
             Item.width = 20;
             Item.height = 20;
-            Item.value = 15000;
+            Item.value = Item.sellPrice(silver: 50);
             Item.rare = ItemRarityID.Blue;
             Item.accessory = true;
         }
