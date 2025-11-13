@@ -1,0 +1,33 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace Pirate.Content.Accessories
+{
+    public class BigFeather : ModItem
+    {
+        public override void SetDefaults()
+        {
+            Item.width = 4;
+            Item.height = 4;
+            Item.value = 15000;
+            Item.rare = ItemRarityID.Blue;
+            Item.accessory = true;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+			recipe.AddRecipeGroup("Wood", 10); // Add Recipe group will add any type of wood.
+			recipe.AddTile(TileID.WorkBenches);
+			recipe.Register();
+        }
+
+        public override void UpdateEquip(Player player)
+        {
+            player.moveSpeed += 0.15f;
+            player.GetModPlayer<GlobalPlayer>().dashFeather = true;
+            player.GetModPlayer<GlobalPlayer>().dashAccessoryEquipped = true;
+        }
+    }
+}
