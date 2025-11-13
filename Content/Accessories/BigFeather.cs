@@ -8,8 +8,8 @@ namespace Pirate.Content.Accessories
     {
         public override void SetDefaults()
         {
-            Item.width = 4;
-            Item.height = 4;
+            Item.width = 20;
+            Item.height = 20;
             Item.value = 15000;
             Item.rare = ItemRarityID.Blue;
             Item.accessory = true;
