@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Xna.Framework;
 
 namespace Pirate.Content.Items
 {
@@ -39,19 +40,18 @@ namespace Pirate.Content.Items
         }
 
         // Add bullet spread
-        public override bool Shoot(Player player, Terraria.DataStructures.EntitySource_ItemUse_WithAmmo source, 
-                                   Terraria.Projectile[] projectiles, ref int type, ref int damage, ref float knockBack)
-        {
-            int numberProjectiles = 3; 
-            float rotation = MathHelper.ToRadians(10); 
-            for (int i = 0; i < numberProjectiles; i++)
-            {
-                Vector2 perturbedSpeed = new Vector2(projectiles[0].velocity.X, projectiles[0].velocity.Y)
-                    .RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1f)));
-                Projectile.NewProjectile(source, player.Center, perturbedSpeed, type, damage, knockBack, player.whoAmI);
-            }
-            return false; 
-        }
+        public override bool Shoot(Player player, Terraria.DataStructures.EntitySource_ItemUse_WithAmmo source,
+                           Vector2 position, Vector2 velocity, int type, int damage, float knockBack)
+{
+    int numberProjectiles = 3; // spread of 3 bullets
+    float rotation = MathHelper.ToRadians(10); // 10 degree spread
+    for (int i = 0; i < numberProjectiles; i++)
+    {
+        Vector2 perturbedSpeed = velocity.RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1f)));
+        Projectile.NewProjectile(source, position, perturbedSpeed, type, damage, knockBack, player.whoAmI);
+    }
+    return false; // prevents default single bullet
+}
        
          public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
