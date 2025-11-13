@@ -22,12 +22,6 @@ namespace Pirate.Content.Items
 			Item.autoReuse = false;
 		}
 
-        public override void SetStaticDefaults()
-		{
-			DisplayName.SetDefault("Bokken");
-			Tooltip.SetDefault("A japanese wooden sword used for training\n Why don’t pirates fight with bokkens at sea? Because they don’t want to board the wrong ship!");
-		}
-
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
