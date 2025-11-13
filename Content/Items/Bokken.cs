@@ -31,7 +31,7 @@ namespace Pirate.Content.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.Wood, 7);
+			recipe.AddRecipeGroup("Wood", 7)
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.Register();
 		}
