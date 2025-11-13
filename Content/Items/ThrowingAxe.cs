@@ -11,8 +11,8 @@ namespace Pirate.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 28;
-            Item.height = 28;
+            Item.width = 28; //No, this isn't just the iron axe, it's a totally unique and original design, I swear!
+            Item.height = 24;
             Item.useStyle = ItemUseStyleID.Swing;   
             Item.useAnimation = 25;
             Item.useTime = 25;
