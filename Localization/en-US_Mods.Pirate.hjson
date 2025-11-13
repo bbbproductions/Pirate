@@ -90,3 +90,5 @@ Items: {
 			'''
 	}
 }
+
+Projectiles.ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
