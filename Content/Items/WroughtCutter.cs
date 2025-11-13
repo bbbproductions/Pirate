@@ -49,3 +49,4 @@ namespace Pirate.Content.Items
 		}
 	}
 }
+//Sprite: Is meant to look like a rusted cutlass
