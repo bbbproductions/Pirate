@@ -35,7 +35,7 @@ namespace Pirate.Content.Items
         {
             CreateRecipe()
                 .AddIngredient(ItemID.Book, 1)
-                .AddIngredient(ItemID.BucketWater, 1)
+                .AddIngredient(ItemID.WaterBucket, 1)
                 .AddTile(TileID.Bookcases)
                 .Register();
         }
