@@ -31,3 +31,6 @@ namespace Pirate.Content.Items
 		}
 	}
 }
+
+//Code: sword needs to not be auto-swing
+//Sprite: needs polishing as well as a bit wider
