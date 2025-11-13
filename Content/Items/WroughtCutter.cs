@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Pirate.Items.Weapons
+namespace Pirate.Items
 {
     public class WroughtCutter : ModItem
     {
