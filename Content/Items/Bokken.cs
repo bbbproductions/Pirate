@@ -19,7 +19,6 @@ namespace Pirate.Content.Items
 			Item.value = Item.buyPrice(copper: 20);
 			Item.rare = ItemRarityID.White;
 			Item.UseSound = SoundID.Item1;
-			Item.autoReuse = false;
 		}
 
 		public override void AddRecipes()
@@ -32,5 +31,4 @@ namespace Pirate.Content.Items
 	}
 }
 
-//Code: sword needs to not be auto-swing
 //Sprite: needs polishing as well as a bit wider
