@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Pirate.Content.Items
 {
-	public class Windblade : ModItem
+	public class TestSword : ModItem
 	{
 		public override void SetDefaults()
 		{
