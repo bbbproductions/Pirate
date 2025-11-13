@@ -89,6 +89,15 @@ Items: {
 			Axe to grind? Throw it!
 			'''
 	}
+
+	GunParts: {
+		DisplayName: Gun Parts
+		Tooltip:
+			'''
+			Parts to make some guns
+			The nuts and bolts of mutiny
+			'''
+	}
 }
 
 Projectiles.ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
