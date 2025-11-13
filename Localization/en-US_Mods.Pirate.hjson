@@ -44,4 +44,22 @@ Items: {
 			Not silver nor gold but it’ll tung-stun yer foes
 			'''
 	}
+
+	GoldCutlass: {
+		DisplayName: Gold Cutlass
+		Tooltip:
+			'''
+			A gilded cutlass
+			Cuts deeper than yer greed
+			'''
+	}
+
+	PlatinumCutlass: {
+		DisplayName: Platinum Cutlass
+		Tooltip:
+			'''
+			A platinum cutlass
+			Refined enough for a king, ruthless enough for a pirate
+			'''
+	}
 }
