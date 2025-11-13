@@ -25,7 +25,7 @@ namespace Pirate.Content.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddRecipeGroup("Wood", 10); // Different recipe for flavor
+			recipe.AddRecipeGroup("Wood", 10); // Add Recipe group will add any type of wood.
 			recipe.AddIngredient(ItemID.Feather, 1); // Adds a thematic "wind" element
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.Register();
