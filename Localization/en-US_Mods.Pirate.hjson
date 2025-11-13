@@ -96,6 +96,16 @@ Items: {
 			'''
 			Parts to make some guns
 			The nuts and bolts of mutiny
+			Material
+			'''
+	}
+
+	Blunderbuss: {
+		DisplayName: Blunderbuss
+		Tooltip:
+			'''
+			A shotgun-type gun with a slow fire-rate
+			Make a big entrance and an even bigger hole
 			'''
 	}
 }
