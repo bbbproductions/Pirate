@@ -108,6 +108,15 @@ Items: {
 			Make a big entrance and an even bigger hole
 			'''
 	}
+
+	SturdyCrossbow: {
+		DisplayName: Sturdy Crossbow
+		Tooltip:
+			'''
+			An upgrade to that flimsy crossbow
+			Now with fewer creaks and more conviction
+			'''
+	}
 }
 
 Projectiles.ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
