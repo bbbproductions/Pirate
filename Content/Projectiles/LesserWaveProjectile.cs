@@ -28,8 +28,21 @@ namespace Pirate.Content.Projectiles
             // Give it a watery blue effect
             Lighting.AddLight(Projectile.Center, 0f, 0.3f, 0.8f);
 
-            // Optional: move slightly forward like a wave
+            // Move like a wave
             Projectile.position += new Vector2(Projectile.velocity.X * 0.5f, 0f);
+
+            // Flip the sprite depending on the direction it's moving
+            if (Projectile.velocity.X > 0)
+            {
+                Projectile.spriteDirection = 1; // Faces right
+            }
+            else if (Projectile.velocity.X < 0)
+            {
+                Projectile.spriteDirection = -1; // Faces left
+            }
+
+            // Optional: rotate slightly with movement
+            Projectile.rotation = Projectile.velocity.X * 0.05f;
         }
     }
 }
