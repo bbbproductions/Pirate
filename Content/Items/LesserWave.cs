@@ -28,7 +28,7 @@ namespace Pirate.Content.Items
             Item.UseSound = SoundID.Item21;       
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<Projectiles.LesserWaveProjectile>();
-            Item.shootSpeed = 10f;
+            Item.shootSpeed = 5f;
         }
 
         public override void AddRecipes()

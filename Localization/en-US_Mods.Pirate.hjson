@@ -141,4 +141,5 @@ Items: {
 Projectiles: {
 	ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
 	WoodenCharmBolt.DisplayName: Wooden Charm Bolt
+	LesserWaveProjectile.DisplayName: Lesser Wave Projectile
 }
