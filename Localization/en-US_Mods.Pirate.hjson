@@ -62,4 +62,13 @@ Items: {
 			Refined enough for a king, ruthless enough for a pirate
 			'''
 	}
+
+	NavalCutlass: {
+		DisplayName: Naval Cutlass
+		Tooltip:
+			'''
+			A proper naval cutlass
+			Keeps the law sharp and the crew sharper
+			'''
+	}
 }
