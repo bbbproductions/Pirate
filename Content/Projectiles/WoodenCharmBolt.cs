@@ -27,3 +27,5 @@ namespace Pirate.Content.Projectiles
         }
     }
 }
+
+//Can we add some particles to this? Methinks it would look cool.
