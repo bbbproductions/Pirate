@@ -127,6 +127,15 @@ Items: {
 			Small wood, big magic
 			'''
 	}
+
+	LesserWave: {
+		DisplayName: Lesser Wave
+		Tooltip:
+			'''
+			A magical book that cast a small tidal wave
+			It's not the size of yer wave, but the motion of the ocean
+			'''
+	}
 }
 
 Projectiles: {
