@@ -129,4 +129,7 @@ Items: {
 	}
 }
 
-Projectiles.ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
+Projectiles: {
+	ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
+	WoodenCharmBolt.DisplayName: Wooden Charm Bolt
+}
