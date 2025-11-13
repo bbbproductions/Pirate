@@ -80,4 +80,13 @@ Items: {
 			Good for intimidation… and very little else
 			'''
 	}
+
+	ThrowingAxe: {
+		DisplayName: Throwing Axe
+		Tooltip:
+			'''
+			A nice throwing axe
+			Axe to grind? Throw it!
+			'''
+	}
 }
