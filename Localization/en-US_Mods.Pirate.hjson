@@ -2,9 +2,14 @@ Items: {
 	TestSword: {
 		Tooltip: ""
 		DisplayName: Test Sword
-	},
+	}
+
 	Bokken: {
-		Tooltip: "A japanese wooden sword used for training\n Why don’t pirates fight with bokkens at sea? Because they don’t want to board the wrong ship!"
+		Tooltip:
+			'''
+			A japanese wooden sword used for training
+			 Why don’t pirates fight with bokkens at sea? Because they don’t want to board the wrong ship!
+			'''
 		DisplayName: Bokken
 	}
 }
