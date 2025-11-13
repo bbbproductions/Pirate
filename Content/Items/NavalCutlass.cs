@@ -38,3 +38,4 @@ namespace Pirate.Content.Items
     }
     }
 }
+//Sprite: needs to have the png size reajusted as well as some polishing
