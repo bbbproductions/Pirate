@@ -17,4 +17,9 @@ Items: {
 		DisplayName: Big Feather
 		Tooltip: This shi took way to long
 	}
+
+	WroughtCutter: {
+		DisplayName: Wrought Cutter
+		Tooltip: One swing and yer fate has been wrought
+	}
 }
