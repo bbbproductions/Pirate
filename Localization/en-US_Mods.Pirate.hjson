@@ -71,4 +71,13 @@ Items: {
 			Keeps the law sharp and the crew sharper
 			'''
 	}
+
+	FlimsyCrossbow: {
+		DisplayName: Flimsy Crossbow
+		Tooltip:
+			'''
+			A weak wooden crossbow
+			Good for intimidation… and very little else
+			'''
+	}
 }
