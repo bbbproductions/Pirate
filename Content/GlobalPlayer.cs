@@ -11,6 +11,13 @@ namespace Pirate.Content
 {
     public class GlobalPlayer : ModPlayer
     {
+
+        // Pirate Damage
+        public float pirateDamage = 0f;
+
+        //Accessories
+
+        //Big Feather
         public bool dashFeather = false;
 
         public enum DashType
@@ -39,6 +46,10 @@ namespace Pirate.Content
 
         public override void ResetEffects()
         {
+            //Pirate Damage reset
+            pirateDamage = 0f;
+
+            // BigFeather
             Player.pickSpeed = 0.8f;
 
             dashFeather = false;

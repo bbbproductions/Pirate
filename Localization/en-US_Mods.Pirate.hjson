@@ -15,6 +15,6 @@ Items: {
 
 	BigFeather: {
 		DisplayName: Big Feather
-		Tooltip: "This shi took way to long"
+		Tooltip: This shi took way to long
 	}
 }
