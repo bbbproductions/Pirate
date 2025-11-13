@@ -13,8 +13,8 @@ namespace Pirate.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 50;
-            Item.height = 22;
+            Item.width = 62;
+            Item.height = 18;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.useTime = 45;                
             Item.useAnimation = 45;
