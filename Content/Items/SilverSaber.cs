@@ -11,8 +11,8 @@ namespace Pirate.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 42;
-            Item.height = 42;
+            Item.width = 40;
+            Item.height = 60;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 20;
             Item.useAnimation = 20;
@@ -49,4 +49,3 @@ namespace Pirate.Content.Items
 		}
     }
 }
-//Sprite: both this and the tugnsten varien need polishing and to have more of a saber look to them 
