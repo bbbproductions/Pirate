@@ -13,7 +13,7 @@ namespace Pirate.Content.Projectiles
         public override void SetDefaults()
         {
             Projectile.width = 28;
-            Projectile.height = 28;
+            Projectile.height = 24;
             Projectile.aiStyle = 2;            
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Ranged;
