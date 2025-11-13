@@ -8,7 +8,7 @@ Items: {
 		Tooltip:
 			'''
 			A japanese wooden sword used for training
-			Why don’t pirates fight with bokkens at sea? Because they don’t want to board the wrong ship!
+			Why don’t pirates fight with bokkens at sea? Because they don’t want to "board" the wrong ship!
 			'''
 		DisplayName: Bokken
 	}
@@ -78,6 +78,7 @@ Items: {
 			'''
 			A weak wooden crossbow
 			Good for intimidation… and very little else
+			Material
 			'''
 	}
 
@@ -115,6 +116,15 @@ Items: {
 			'''
 			An upgrade to that flimsy crossbow
 			Now with fewer creaks and more conviction
+			'''
+	}
+
+	WoodenCharm: {
+		DisplayName: Wooden Charm
+		Tooltip:
+			'''
+			An eerie charm made from wood that fires off a weak purple bolt
+			Small wood, big magic
 			'''
 	}
 }
