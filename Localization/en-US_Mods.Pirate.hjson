@@ -136,10 +136,16 @@ Items: {
 			It's not the size of yer wave, but the motion of the ocean
 			'''
 	}
+
+	ThunderStaff: {
+		DisplayName: Thunder Staff
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
 	ThrowingAxeProjectile.DisplayName: Throwing Axe Projectile
 	WoodenCharmBolt.DisplayName: Wooden Charm Bolt
 	LesserWaveProjectile.DisplayName: Lesser Wave Projectile
+	ThunderBolt.DisplayName: Thunder Bolt
 }
