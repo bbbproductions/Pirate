@@ -10,11 +10,6 @@ namespace Pirate.Content.Projectiles
 {
     public class LesserWaveProjectile : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Lesser Wave");
-        }
-
         public override void SetDefaults()
         {
             Projectile.width = 24;
