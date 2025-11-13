@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
+using Pirate.Content.Items.Materials;
 
 namespace Pirate.Content.Items
 {
