@@ -32,7 +32,7 @@ namespace Pirate.Content.Items
                 .AddTile(TileID.Anvils)
                 .Register();
         }
-        
+
          public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
 			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
@@ -49,3 +49,4 @@ namespace Pirate.Content.Items
 		}
     }
 }
+//Sprite: both this and the tugnsten varien need polishing and to have more of a saber look to them 

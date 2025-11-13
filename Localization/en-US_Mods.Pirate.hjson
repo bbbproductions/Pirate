@@ -20,7 +20,7 @@ Items: {
 
 	WroughtCutter: {
 		DisplayName: Wrought Cutter
-		Tooltip: 
+		Tooltip:
 			'''
 			A rusted cutlass
 			One swing and yer fate has been wrought
@@ -29,8 +29,8 @@ Items: {
 
 	SilverSaber: {
 		DisplayName: Silver Saber
-		Tooltip: 
-			'''	
+		Tooltip:
+			'''
 			A shiny saber made from silver
 			Polished for plunderin dulls only on the rich
 			'''
