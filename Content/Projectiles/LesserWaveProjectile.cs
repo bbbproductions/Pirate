@@ -12,8 +12,8 @@ namespace Pirate.Content.Projectiles
     {
         public override void SetDefaults()
         {
-            Projectile.width = 24;
-            Projectile.height = 16;
+            Projectile.width = 48;
+            Projectile.height = 32;
             Projectile.aiStyle = 0;          
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
