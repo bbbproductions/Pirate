@@ -10,8 +10,8 @@ namespace Pirate.Content.Items
 		{
 			Item.damage = 5;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 25;
-			Item.height = 40;
+			Item.width = 48;
+			Item.height = 50;
 			Item.useTime = 15;
 			Item.useAnimation = 15;
 			Item.useStyle = ItemUseStyleID.Swing;
