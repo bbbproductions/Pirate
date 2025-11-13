@@ -8,7 +8,7 @@ Items: {
 		Tooltip:
 			'''
 			A japanese wooden sword used for training
-			 Why don’t pirates fight with bokkens at sea? Because they don’t want to board the wrong ship!
+			Why don’t pirates fight with bokkens at sea? Because they don’t want to board the wrong ship!
 			'''
 		DisplayName: Bokken
 	}
@@ -20,6 +20,28 @@ Items: {
 
 	WroughtCutter: {
 		DisplayName: Wrought Cutter
-		Tooltip: One swing and yer fate has been wrought
+		Tooltip: 
+			'''
+			A rusted cutlass
+			One swing and yer fate has been wrought
+			'''
+	}
+
+	SilverSaber: {
+		DisplayName: Silver Saber
+		Tooltip: 
+			'''	
+			A shiny saber made from silver
+			Polished for plunderin dulls only on the rich
+			'''
+	}
+
+	TungstenSaber: {
+		DisplayName: Tungsten Saber
+		Tooltip:
+			'''
+			A shiny saber made from tungsten
+			Not silver nor gold but it’ll tung-stun yer foes
+			'''
 	}
 }
