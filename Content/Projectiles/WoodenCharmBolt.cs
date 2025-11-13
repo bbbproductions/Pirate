@@ -7,11 +7,6 @@ namespace Pirate.Content.Projectiles
 {
     public class WoodenCharmBolt : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Wooden Charm Bolt");
-        }
-
         public override void SetDefaults()
         {
             Projectile.width = 10;
