@@ -49,3 +49,4 @@ namespace Pirate.Content.Items
 		}
     }
 }
+//Sprite: needs to look similair to the cutlass in the game but a but less big and with its respective metal
