@@ -13,17 +13,17 @@ namespace Pirate.Content.Items
         {
             Item.width = 28; //No, this isn't just the iron axe, it's a totally unique and original design, I swear!
             Item.height = 24;
-            Item.useStyle = ItemUseStyleID.Swing;   
+            Item.useStyle = ItemUseStyleID.Swing;
             Item.useAnimation = 25;
             Item.useTime = 25;
-            Item.damage = 14;                     
-            Item.knockBack = 5f;                    
+            Item.damage = 14;
+            Item.knockBack = 5f;
             Item.DamageType = DamageClass.Ranged;
-            Item.noMelee = true;                     
-            Item.consumable = true;                 
-            Item.maxStack = 999;                   
+            Item.noMelee = true;
+            Item.consumable = true;
+            Item.maxStack = 999;
             Item.shoot = ModContent.ProjectileType<Projectiles.ThrowingAxeProjectile>();
-            Item.shootSpeed = 9f;                   
+            Item.shootSpeed = 9f;
             Item.value = Item.buyPrice(silver: 15);
             Item.rare = ItemRarityID.White;
             Item.UseSound = SoundID.Item1;
@@ -32,25 +32,25 @@ namespace Pirate.Content.Items
 
         public override void AddRecipes()
         {
-            CreateRecipe(25)                           
-                .AddRecipeGroup(RecipeGroupID.IronBar, 2) 
+            CreateRecipe(25)
+                .AddRecipeGroup(RecipeGroupID.IronBar, 2)
                 .AddTile(TileID.Anvils)
                 .Register();
         }
-        
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-		{
-			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
-			if(lineToChange != null)
-			{
-				string[] split = lineToChange.Text.Split(' ');
-				lineToChange.Text = split.First() + " pirate " + split.Last();
-			}
-		}
 
-		public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
-		{
-			damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
-		}
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
+            if (lineToChange != null)
+            {
+                string[] split = lineToChange.Text.Split(' ');
+                lineToChange.Text = split.First() + " pirate " + split.Last();
+            }
+        }
+
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+        }
     }
 }

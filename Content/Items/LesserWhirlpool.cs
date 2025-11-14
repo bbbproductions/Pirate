@@ -21,7 +21,7 @@ namespace Pirate.Content.Items
             Item.useAnimation = 28;
             Item.mana = 14;
             Item.damage = 22;
-            Item.knockBack = 9f; 
+            Item.knockBack = 9f;
             Item.DamageType = DamageClass.Magic;
             Item.noMelee = true;
 
@@ -43,18 +43,18 @@ namespace Pirate.Content.Items
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
-		{
-			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
-			if(lineToChange != null)
-			{
-				string[] split = lineToChange.Text.Split(' ');
-				lineToChange.Text = split.First() + " pirate " + split.Last();
-			}
-		}
+        {
+            var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
+            if (lineToChange != null)
+            {
+                string[] split = lineToChange.Text.Split(' ');
+                lineToChange.Text = split.First() + " pirate " + split.Last();
+            }
+        }
 
-		public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
-		{
-			damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
-		}
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+        }
     }
 }
