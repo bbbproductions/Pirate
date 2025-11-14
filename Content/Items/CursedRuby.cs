@@ -35,7 +35,7 @@ namespace Pirate.Content.Items
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Ruby, 1);
-			recipe.AddRecipeGroup("SilverBar", 5);
+			recipe.AddRecipeGroup("TungstenBar", 5);
 			recipe.AddTile(TileID.DemonAltar);
 			recipe.Register();
         }
