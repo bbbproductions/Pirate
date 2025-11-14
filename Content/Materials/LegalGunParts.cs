@@ -11,8 +11,8 @@ namespace Pirate.Content.Materials
     {
         public override void SetDefaults()
         {
-            Item.width = 28;
-            Item.height = 20;
+            Item.width = 26;
+            Item.height = 18;
             Item.maxStack = 999;
             Item.value = Item.buyPrice(silver: 10);
             Item.rare = ItemRarityID.White;
