@@ -16,9 +16,9 @@ namespace Pirate.Content.Items
             Item.width = 36;
             Item.height = 36;
             Item.useStyle = ItemUseStyleID.HoldUp;
-            Item.useTime = 25;
+            Item.useTime = 50;
             Item.useAnimation = 25;
-            Item.damage = 28;
+            Item.damage = 8;
             Item.knockBack = 4f;
             Item.DamageType = DamageClass.Magic;
             Item.mana = 12;
@@ -40,7 +40,7 @@ namespace Pirate.Content.Items
                 .Register();
         }
 
-         public override void ModifyTooltips(List<TooltipLine> tooltips)
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
 			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
 			if(lineToChange != null)

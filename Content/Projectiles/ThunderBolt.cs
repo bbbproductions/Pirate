@@ -17,8 +17,8 @@ namespace Pirate.Content.Projectiles
             Projectile.aiStyle = 0;    // Custom
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
-            Projectile.penetrate = -1; // Infinite until time runs out
-            Projectile.timeLeft = 180; // 3 seconds (60 ticks = 1 sec)
+            Projectile.penetrate = 5; // Infinite until time runs out
+            Projectile.timeLeft = 60; // 3 seconds (60 ticks = 1 sec)
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
             Projectile.alpha = 255;     // Start invisible, we’ll fade in
@@ -59,28 +59,28 @@ namespace Pirate.Content.Projectiles
     Projectile.position += Projectile.velocity;
 
     // Damage enemies in a straight path
-    Rectangle beamHitbox = new Rectangle(
-        (int)Projectile.Center.X - 4,
-        (int)Projectile.Center.Y - 4,
-        480,
-        8);
+    // Rectangle beamHitbox = new Rectangle(
+    //     (int)Projectile.Center.X - 4,
+    //     (int)Projectile.Center.Y - 4,
+    //     480,
+    //     8);
 
-    for (int i = 0; i < Main.maxNPCs; i++)
-    {
-        NPC npc = Main.npc[i];
-        if (npc.active && !npc.friendly && !npc.dontTakeDamage && npc.Hitbox.Intersects(beamHitbox))
-        {
-            NPC.HitInfo hitInfo = new NPC.HitInfo
-            {
-                Damage = Projectile.damage,
-                Knockback = Projectile.knockBack,
-                HitDirection = Projectile.direction,
-                Crit = false
-            };
+    // for (int i = 0; i < Main.maxNPCs; i++)
+    // {
+    //     NPC npc = Main.npc[i];
+    //     if (npc.active && !npc.friendly && !npc.dontTakeDamage)//&& npc.Hitbox.Intersects(beamHitbox)
+    //     {
+    //         NPC.HitInfo hitInfo = new NPC.HitInfo
+    //         {
+    //             Damage = Projectile.damage,
+    //             Knockback = Projectile.knockBack,
+    //             HitDirection = Projectile.direction,
+    //             Crit = false
+    //         };
 
-            npc.StrikeNPC(hitInfo);
-        }
-    }
+    //         npc.StrikeNPC(hitInfo);
+    //     }
+    // }
 }
     }
 }
