@@ -141,6 +141,15 @@ Items: {
 		DisplayName: Thunder Staff
 		Tooltip: ""
 	}
+
+	CursedRuby: {
+		DisplayName: Cursed Ruby
+		Tooltip:
+			'''
+			An accursed ruby that sets yer foes ablaze
+			WIP
+			'''
+	}
 }
 
 Projectiles: {
@@ -148,4 +157,5 @@ Projectiles: {
 	WoodenCharmBolt.DisplayName: Wooden Charm Bolt
 	LesserWaveProjectile.DisplayName: Lesser Wave Projectile
 	ThunderBolt.DisplayName: Thunder Bolt
+	CursedRubyBolt.DisplayName: Cursed Ruby Bolt
 }
