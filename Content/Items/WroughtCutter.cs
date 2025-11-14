@@ -11,8 +11,8 @@ namespace Pirate.Content.Items
     {
         public override void SetDefaults()
         {
-            Item.width = 40;
-            Item.height = 40;
+            Item.width = 28;
+            Item.height = 30;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 25;
             Item.useAnimation = 25;
