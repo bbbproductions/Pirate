@@ -24,10 +24,10 @@ namespace Pirate.Content.Materials
 
         public override void AddRecipes()
         {
-            CreateRecipe()
-                .AddRecipeGroup(RecipeGroupID.IronBar, 5) 
-                .AddTile(TileID.Anvils)
-                .Register();
+            Recipe recipe = CreateRecipe();
+			recipe.AddRecipeGroup("IronBar", 5);
+			recipe.AddTile(TileID.Anvils);
+			recipe.Register();
         }
     }
 }
