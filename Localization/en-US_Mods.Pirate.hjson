@@ -91,12 +91,12 @@ Items: {
 			'''
 	}
 
-	GunParts: {
-		DisplayName: Gun Parts
+	LegalGunParts: {
+		DisplayName: Legal Gun Parts
 		Tooltip:
 			'''
 			Parts to make some guns
-			The nuts and bolts of mutiny
+			Completely, totally, legal gun parts
 			Material
 			'''
 	}

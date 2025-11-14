@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Pirate.Content.Materials
 {
-    public class GunParts : ModItem
+    public class LegalGunParts : ModItem
     {
         public override void SetDefaults()
         {

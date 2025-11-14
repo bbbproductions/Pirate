@@ -35,7 +35,7 @@ namespace Pirate.Content.Items
         {
             CreateRecipe()
                 .AddIngredient(ItemID.IronBar, 6)
-                .AddIngredient(ModContent.ItemType<GunParts>(), 1)
+                .AddIngredient(ModContent.ItemType<LegalGunParts>(), 1)
                 .AddTile(TileID.Anvils)
                 .Register();
         }
