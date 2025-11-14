@@ -159,6 +159,15 @@ Items: {
 			WIP
 			'''
 	}
+
+	WoodenBallista: {
+		DisplayName: Wooden Ballista
+		Tooltip:
+			'''
+			A shabby wooden ballista man by a crewmate with an eyepatch
+			WIP
+			'''
+	}
 }
 
 Projectiles: {
@@ -168,4 +177,5 @@ Projectiles: {
 	ThunderBolt.DisplayName: Thunder Bolt
 	CursedRubyBolt.DisplayName: Cursed Ruby Bolt
 	LesserWhirlpoolProjectile.DisplayName: Lesser Whirlpool Projectile
+	WoodenBallistaTurret.DisplayName: Wooden Ballista Turret
 }
