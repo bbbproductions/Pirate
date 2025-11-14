@@ -159,15 +159,6 @@ Items: {
 			WIP
 			'''
 	}
-
-	WoodenBallista: {
-		DisplayName: Wooden Ballista
-		Tooltip:
-			'''
-			A shabby wooden ballista man by a crewmate with an eyepatch
-			WIP
-			'''
-	}
 }
 
 Projectiles: {
