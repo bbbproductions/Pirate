@@ -33,11 +33,17 @@ namespace Pirate.Content.Items
 
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.Ruby, 1);
-			recipe.AddRecipeGroup("TungstenBar", 5);
-			recipe.AddTile(TileID.DemonAltar);
-			recipe.Register();
+            Recipe recipe1 = CreateRecipe();
+            recipe1.AddIngredient(ItemID.Ruby, 1);
+			recipe1.AddIngredient(ItemID.TungstenBar, 5);
+			recipe1.AddTile(TileID.DemonAltar);
+			recipe1.Register();
+
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ItemID.Ruby, 1);
+			recipe2.AddIngredient(ItemID.SilverBar, 5);
+			recipe2.AddTile(TileID.DemonAltar);
+			recipe2.Register();
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
