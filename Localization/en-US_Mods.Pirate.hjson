@@ -150,6 +150,15 @@ Items: {
 			WIP
 			'''
 	}
+
+	LesserWhirlpool: {
+		DisplayName: Lesser Whirlpool
+		Tooltip:
+			'''
+			A magic book that casts a small whirpool to keep yer foes back
+			WIP
+			'''
+	}
 }
 
 Projectiles: {
@@ -158,4 +167,5 @@ Projectiles: {
 	LesserWaveProjectile.DisplayName: Lesser Wave Projectile
 	ThunderBolt.DisplayName: Thunder Bolt
 	CursedRubyBolt.DisplayName: Cursed Ruby Bolt
+	LesserWhirlpoolProjectile.DisplayName: Lesser Whirlpool Projectile
 }
