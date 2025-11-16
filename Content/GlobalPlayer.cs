@@ -55,11 +55,11 @@ namespace Pirate.Content
             dashFeather = false;
             dashAccessoryEquipped = false;
 
-            if(Player.controlRight && Player.releaseRight && Player.doubleTapCardinalTimer[dashRight] < 15)
+            if (Player.controlRight && Player.releaseRight && Player.doubleTapCardinalTimer[dashRight] < 15)
             {
                 dashDir = dashRight;
             }
-            else if(Player.controlLeft && Player.releaseLeft && Player.doubleTapCardinalTimer[dashLeft] < 15)
+            else if (Player.controlLeft && Player.releaseLeft && Player.doubleTapCardinalTimer[dashLeft] < 15)
             {
                 dashDir = dashLeft;
             }
@@ -71,35 +71,35 @@ namespace Pirate.Content
 
         public override void PreUpdateMovement()
         {
-            if(canUseDash() && dashDir != -1 && dashDelay == 0)
+            if (canUseDash() && dashDir != -1 && dashDelay == 0)
             {
                 Vector2 newVelocity = Player.velocity;
 
-                switch(dashDir)
+                switch (dashDir)
                 {
                     case dashLeft when Player.velocity.X > -dashVelocity:
                     case dashRight when Player.velocity.X < dashVelocity:
-                    {
-                        float dashDirection = dashDir == dashRight ? 1 : -1;
-                        newVelocity.X = dashDirection * dashVelocity;
-                        break;
-                    }
+                        {
+                            float dashDirection = dashDir == dashRight ? 1 : -1;
+                            newVelocity.X = dashDirection * dashVelocity;
+                            break;
+                        }
                     default:
                         return;
                 }
-                
+
                 dashDelay = dashCooldown;
                 dashTimer = dashDelay;
                 Player.velocity = newVelocity;
                 SoundEngine.PlaySound(SoundID.DD2_MonkStaffSwing, Player.position);
             }
 
-            if(dashDelay > 0)
+            if (dashDelay > 0)
                 dashDelay--;
-            
-            if(dashDelay > dashCooldown - 10)
+
+            if (dashDelay > dashCooldown - 10)
             {
-                switch(dashType)
+                switch (dashType)
                 {
                     case DashType.feather:
                         int dust = Dust.NewDust(Player.position, Player.width, Player.height, DustID.Cloud, 0, 0, default, default, Main.rand.NextFloat(0.75f, 1.25f));
@@ -109,7 +109,7 @@ namespace Pirate.Content
                 }
             }
 
-            if(dashTimer > 0)
+            if (dashTimer > 0)
             {
                 Player.eocDash = dashTimer;
                 dashTimer--;

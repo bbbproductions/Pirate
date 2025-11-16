@@ -18,9 +18,9 @@ namespace Pirate.Content.Accessories
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-			recipe.AddRecipeGroup("Wood", 10); // Add Recipe group will add any type of wood.
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.Register();
+            recipe.AddRecipeGroup("Wood", 10); // Add Recipe group will add any type of wood.
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.Register();
         }
 
         public override void UpdateEquip(Player player)

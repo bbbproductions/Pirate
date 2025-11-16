@@ -14,10 +14,10 @@ namespace Pirate.Content.Projectiles
         {
             Projectile.width = 28;
             Projectile.height = 24;
-            Projectile.aiStyle = 2;            
+            Projectile.aiStyle = 2;
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Ranged;
-            Projectile.penetrate = 1;           
+            Projectile.penetrate = 1;
             Projectile.timeLeft = 300;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = false;

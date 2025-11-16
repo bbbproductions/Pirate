@@ -25,32 +25,32 @@ namespace Pirate.Content.Items
             Item.UseSound = SoundID.Item1;
         }
 
-    public class NavalCutlassGlobalNPC : GlobalNPC
-    {
-        public override void ModifyShop(NPCShop shop)
+        public class NavalCutlassGlobalNPC : GlobalNPC
         {
-            if (shop.NpcType == NPCID.Merchant)
+            public override void ModifyShop(NPCShop shop)
             {
-                shop.Add(new Item(ModContent.ItemType<NavalCutlass>())); 
+                if (shop.NpcType == NPCID.Merchant)
+                {
+                    shop.Add(new Item(ModContent.ItemType<NavalCutlass>()));
 
+                }
             }
         }
-    }
-    
-    public override void ModifyTooltips(List<TooltipLine> tooltips)
-		{
-			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
-			if(lineToChange != null)
-			{
-				string[] split = lineToChange.Text.Split(' ');
-				lineToChange.Text = split.First() + " pirate " + split.Last();
-			}
-		}
 
-		public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
-		{
-			damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
-		}
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
+            if (lineToChange != null)
+            {
+                string[] split = lineToChange.Text.Split(' ');
+                lineToChange.Text = split.First() + " pirate " + split.Last();
+            }
+        }
+
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+        }
     }
 }
 //Sprite: needs to have the png size reajusted as well as some polishing

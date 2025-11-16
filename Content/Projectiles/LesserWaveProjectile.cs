@@ -14,11 +14,11 @@ namespace Pirate.Content.Projectiles
         {
             Projectile.width = 48;
             Projectile.height = 32;
-            Projectile.aiStyle = 0;          
+            Projectile.aiStyle = 0;
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
-            Projectile.penetrate = 2;        
-            Projectile.timeLeft = 60;        
+            Projectile.penetrate = 2;
+            Projectile.timeLeft = 60;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = false;
         }

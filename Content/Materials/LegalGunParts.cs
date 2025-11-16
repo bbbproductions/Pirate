@@ -16,7 +16,7 @@ namespace Pirate.Content.Materials
             Item.maxStack = 999;
             Item.value = Item.buyPrice(silver: 10);
             Item.rare = ItemRarityID.White;
-            Item.useStyle = ItemUseStyleID.Swing; 
+            Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 10;
             Item.useAnimation = 10;
             Item.consumable = false;
@@ -24,10 +24,10 @@ namespace Pirate.Content.Materials
 
         public override void AddRecipes()
         {
-            CreateRecipe()
-                .AddRecipeGroup(RecipeGroupID.IronBar, 5) 
-                .AddTile(TileID.Anvils)
-                .Register();
+            Recipe recipe = CreateRecipe();
+            recipe.AddRecipeGroup("IronBar", 5);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
         }
     }
 }

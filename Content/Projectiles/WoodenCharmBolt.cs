@@ -11,10 +11,10 @@ namespace Pirate.Content.Projectiles
         {
             Projectile.width = 10;
             Projectile.height = 10;
-            Projectile.aiStyle = 0;          
+            Projectile.aiStyle = 0;
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
-            Projectile.penetrate = 1;        
+            Projectile.penetrate = 1;
             Projectile.timeLeft = 300;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = false;
@@ -23,7 +23,7 @@ namespace Pirate.Content.Projectiles
         public override void AI()
         {
             // Give it a small purple glow
-            Lighting.AddLight(Projectile.Center, 0.6f, 0f, 0.8f); 
+            Lighting.AddLight(Projectile.Center, 0.6f, 0f, 0.8f);
         }
     }
 }

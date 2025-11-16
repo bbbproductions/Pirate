@@ -33,26 +33,32 @@ namespace Pirate.Content.Items
 
         public override void AddRecipes()
         {
-            CreateRecipe()
-                .AddIngredient(ItemID.Ruby, 1)
-                .AddRecipeGroup(ItemID.SilverBar, 5)
-                .AddTile(TileID.DemonAltar)      
-                .Register();
+            Recipe recipe1 = CreateRecipe();
+            recipe1.AddIngredient(ItemID.Ruby, 1);
+			recipe1.AddIngredient(ItemID.TungstenBar, 5);
+			recipe1.AddTile(TileID.DemonAltar);
+			recipe1.Register();
+
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ItemID.Ruby, 1);
+			recipe2.AddIngredient(ItemID.SilverBar, 5);
+			recipe2.AddTile(TileID.DemonAltar);
+			recipe2.Register();
         }
 
         public override void ModifyTooltips(List<TooltipLine> tooltips)
-		{
-			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
-			if(lineToChange != null)
-			{
-				string[] split = lineToChange.Text.Split(' ');
-				lineToChange.Text = split.First() + " pirate " + split.Last();
-			}
-		}
+        {
+            var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
+            if (lineToChange != null)
+            {
+                string[] split = lineToChange.Text.Split(' ');
+                lineToChange.Text = split.First() + " pirate " + split.Last();
+            }
+        }
 
-		public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
-		{
-			damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
-		}
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+        }
     }
 }

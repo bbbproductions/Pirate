@@ -16,9 +16,9 @@ namespace Pirate.Content.Items
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useTime = 23;
             Item.useAnimation = 23;
-            Item.damage = 25;                 
-            Item.knockBack = 6.5f;            
-            Item.scale = 1.2f;                
+            Item.damage = 25;
+            Item.knockBack = 6.5f;
+            Item.scale = 1.2f;
             Item.DamageType = DamageClass.Melee;
             Item.value = Item.buyPrice(silver: 90);
             Item.rare = ItemRarityID.Green;
@@ -33,19 +33,19 @@ namespace Pirate.Content.Items
                 .AddTile(TileID.Anvils)
                 .Register();
         }
-         public override void ModifyTooltips(List<TooltipLine> tooltips)
-		{
-			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
-			if(lineToChange != null)
-			{
-				string[] split = lineToChange.Text.Split(' ');
-				lineToChange.Text = split.First() + " pirate " + split.Last();
-			}
-		}
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
+            if (lineToChange != null)
+            {
+                string[] split = lineToChange.Text.Split(' ');
+                lineToChange.Text = split.First() + " pirate " + split.Last();
+            }
+        }
 
-		public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
-		{
-			damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
-		}
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+        }
     }
 }

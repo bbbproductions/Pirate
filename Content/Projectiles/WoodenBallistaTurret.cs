@@ -34,7 +34,7 @@ namespace Pirate.Content.Projectiles
 
             Player player = Main.player[Projectile.owner];
             player.UpdateMaxTurrets();   // <- THIS MAKES IT COUNT
-           
+
             // Stay still
             Projectile.velocity = Vector2.Zero;
 
