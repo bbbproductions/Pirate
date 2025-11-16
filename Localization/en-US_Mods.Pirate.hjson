@@ -195,8 +195,6 @@ Items: {
 
 			A test whip
 			'''
-		Switching: Mods.Pirate.Items.TestWhip.Switching
-		ThisIs: Mods.Pirate.Items.TestWhip.ThisIs
 	}
 }
 
