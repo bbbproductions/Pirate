@@ -165,7 +165,7 @@ Items: {
 		Tooltip:
 			'''
 
-			A test Minion
+			A test minion
 			'''
 	}
 
@@ -187,6 +187,17 @@ Items: {
 		DisplayName: Test Sentry Item
 		Tooltip: ""
 	}
+
+	TestWhip: {
+		DisplayName: Test Whip
+		Tooltip:
+			'''
+
+			A test whip
+			'''
+		Switching: Mods.Pirate.Items.TestWhip.Switching
+		ThisIs: Mods.Pirate.Items.TestWhip.ThisIs
+	}
 }
 
 Projectiles: {
@@ -200,6 +211,7 @@ Projectiles: {
 	TestMinionProjectile.DisplayName: Test Minion Projectile
 	TestSentry.DisplayName: Test Sentry
 	TestSentryShot.DisplayName: Test Sentry Shot
+	TestWhipProjectile.DisplayName: Test Whip Projectile
 }
 
 Buffs: {
