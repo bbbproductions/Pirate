@@ -159,6 +159,34 @@ Items: {
 			WIP
 			'''
 	}
+
+	TestMinionItem: {
+		DisplayName: Test Minion
+		Tooltip:
+			'''
+
+			A test Minion
+			'''
+	}
+
+	WoodenBallista: {
+		DisplayName: Wooden Ballista
+		Tooltip: ""
+	}
+
+	TestSentry: {
+		DisplayName: Test Sentry
+		Tooltip:
+			'''
+
+			A test sentry
+			'''
+	}
+
+	TestSentryItem: {
+		DisplayName: Test Sentry Item
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -169,4 +197,14 @@ Projectiles: {
 	CursedRubyBolt.DisplayName: Cursed Ruby Bolt
 	LesserWhirlpoolProjectile.DisplayName: Lesser Whirlpool Projectile
 	WoodenBallistaTurret.DisplayName: Wooden Ballista Turret
+	TestMinionProjectile.DisplayName: Test Minion Projectile
+	TestSentry.DisplayName: Test Sentry
+	TestSentryShot.DisplayName: Test Sentry Shot
+}
+
+Buffs: {
+	TestMinionBuff: {
+		DisplayName: Test Minion Buff
+		Description: Mods.Pirate.Buffs.TestMinionBuff.Description
+	}
 }
