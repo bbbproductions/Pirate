@@ -169,9 +169,13 @@ Items: {
 			'''
 	}
 
-	WoodenBallista: {
+	WoodenBallistaItem: {
 		DisplayName: Wooden Ballista
-		Tooltip: ""
+		Tooltip:
+			'''
+
+			A weak wooden ballista manned by one of yer own crew
+			'''
 	}
 
 	TestSentry: {
@@ -210,6 +214,8 @@ Projectiles: {
 	TestSentry.DisplayName: Test Sentry
 	TestSentryShot.DisplayName: Test Sentry Shot
 	TestWhipProjectile.DisplayName: Test Whip Projectile
+	WoodenBallistaBolt.DisplayName: Wooden Ballista Bolt
+	WoodenBallista.DisplayName: Wooden Ballista
 }
 
 Buffs: {
