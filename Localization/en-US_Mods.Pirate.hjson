@@ -205,6 +205,11 @@ Items: {
 		DisplayName: Chain Whip
 		Tooltip: ""
 	}
+
+	PollyMinionItem: {
+		DisplayName: Polly the Parrot
+		Tooltip: Yar har har we love Polly
+	}
 }
 
 Projectiles: {
