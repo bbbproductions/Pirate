@@ -9,7 +9,9 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using System;
 
-public class PollyMinionItem : ModItem
+namespace Pirate.Content.Items
+{
+    public class PollyMinionItem : ModItem
 	{
 		public override void SetStaticDefaults() {
 			ItemID.Sets.GamepadWholeScreenUseRange[Item.type] = true; // This lets the player target anywhere on the whole screen while using a controller
@@ -55,8 +57,24 @@ public class PollyMinionItem : ModItem
 		public override void AddRecipes()
         {
             CreateRecipe()
-                .AddRecipeGroup(ItemID.Feather, 8)
+                .AddIngredient(ItemID.Feather, 8)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+		{
+			var lineToChange = tooltips.FirstOrDefault(x => x.Name == "Damage" && x.Mod == "Terraria");
+			if (lineToChange != null)
+			{
+				string[] split = lineToChange.Text.Split(' ');
+				lineToChange.Text = split.First() + " pirate " + split.Last();
+			}
+		}
+
+		public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+		{
+			damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+		}
 	}
+}

@@ -7,7 +7,9 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using System;
 
-public class PollyMinionProjectile : ModProjectile
+namespace Pirate.Content.Projectiles
+{
+    public class PollyMinionProjectile : ModProjectile
 	{
 		public override void SetStaticDefaults() {
 			// Sets the amount of frames this minion has on its spritesheet
@@ -233,3 +235,4 @@ public class PollyMinionProjectile : ModProjectile
 			Lighting.AddLight(Projectile.Center, Color.White.ToVector3() * 0.78f);
 		}
 	}
+}

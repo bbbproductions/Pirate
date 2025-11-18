@@ -207,8 +207,8 @@ Items: {
 	}
 
 	PollyMinionItem: {
-		DisplayName: Polly the Parrot
-		Tooltip: Yar har har we love Polly
+		Tooltip: ""
+		DisplayName: Polly Minion Item
 	}
 }
 
@@ -227,6 +227,7 @@ Projectiles: {
 	WoodenBallistaBolt.DisplayName: Wooden Ballista Bolt
 	WoodenBallista.DisplayName: Wooden Ballista
 	ChainWhipProjectile.DisplayName: Chain Whip Projectile
+	PollyMinionProjectile.DisplayName: Polly Minion Projectile
 }
 
 Buffs: {
@@ -243,5 +244,10 @@ Buffs: {
 	ChainWhipDebuff: {
 		DisplayName: Chain Whip Debuff
 		Description: Mods.Pirate.Buffs.ChainWhipDebuff.Description
+	}
+
+	PollyMinionBuff: {
+		DisplayName: Polly Minion Buff
+		Description: Mods.Pirate.Buffs.PollyMinionBuff.Description
 	}
 }
