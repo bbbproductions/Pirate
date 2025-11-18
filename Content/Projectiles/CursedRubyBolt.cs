@@ -12,8 +12,8 @@ namespace Pirate.Content.Projectiles
     {
         public override void SetDefaults()
         {
-            Projectile.width = 12;
-            Projectile.height = 12;
+            Projectile.width = 24;
+            Projectile.height = 24;
             Projectile.aiStyle = 1; // simple bullet AI
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
