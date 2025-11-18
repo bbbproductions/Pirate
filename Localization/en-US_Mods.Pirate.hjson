@@ -200,6 +200,11 @@ Items: {
 			A test whip
 			'''
 	}
+
+	ChainWhip: {
+		DisplayName: Chain Whip
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -216,11 +221,22 @@ Projectiles: {
 	TestWhipProjectile.DisplayName: Test Whip Projectile
 	WoodenBallistaBolt.DisplayName: Wooden Ballista Bolt
 	WoodenBallista.DisplayName: Wooden Ballista
+	ChainWhipProjectile.DisplayName: Chain Whip Projectile
 }
 
 Buffs: {
 	TestMinionBuff: {
 		DisplayName: Test Minion Buff
 		Description: Mods.Pirate.Buffs.TestMinionBuff.Description
+	}
+
+	ChainWhipAdvancedDebuff: {
+		DisplayName: Chain Whip Advanced Debuff
+		Description: Mods.Pirate.Buffs.ChainWhipAdvancedDebuff.Description
+	}
+
+	ChainWhipDebuff: {
+		DisplayName: Chain Whip Debuff
+		Description: Mods.Pirate.Buffs.ChainWhipDebuff.Description
 	}
 }
