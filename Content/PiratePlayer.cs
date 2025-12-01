@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 
 namespace Pirate.Content
 {
-    public class GlobalPlayer : ModPlayer
+    public class PiratePlayer : ModPlayer
     {
 
         // Pirate Damage

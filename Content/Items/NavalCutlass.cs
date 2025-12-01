@@ -49,7 +49,7 @@ namespace Pirate.Content.Items
 
         public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
         {
-            damage += player.GetModPlayer<GlobalPlayer>().pirateDamage;
+            damage += player.GetModPlayer<PiratePlayer>().pirateDamage;
         }
     }
 }

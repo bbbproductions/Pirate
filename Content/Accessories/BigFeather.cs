@@ -26,8 +26,8 @@ namespace Pirate.Content.Accessories
         public override void UpdateEquip(Player player)
         {
             player.moveSpeed += 0.15f;
-            player.GetModPlayer<GlobalPlayer>().dashFeather = true;
-            player.GetModPlayer<GlobalPlayer>().dashAccessoryEquipped = true;
+            player.GetModPlayer<PiratePlayer>().dashFeather = true;
+            player.GetModPlayer<PiratePlayer>().dashAccessoryEquipped = true;
         }
     }
 }
