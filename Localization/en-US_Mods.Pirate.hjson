@@ -210,6 +210,11 @@ Items: {
 		Tooltip: ""
 		DisplayName: Polly Minion Item
 	}
+
+	SlimyEyePatch: {
+		DisplayName: Slimy Eye Patch
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -250,4 +255,9 @@ Buffs: {
 		DisplayName: Polly Minion Buff
 		Description: Mods.Pirate.Buffs.PollyMinionBuff.Description
 	}
+}
+
+NPCs: {
+	PirateSlime.DisplayName: Pirate Slime
+	PirateSlimePet.DisplayName: Pirate Slime Pet
 }
